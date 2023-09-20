@@ -1,0 +1,11 @@
+/* App.css or a global CSS file */
+
+body {
+  max-width: 100%; /* Set a maximum width to prevent horizontal scrolling */
+
+  overflow-x: hidden; /* Hide horizontal overflow */
+
+}
+
+/* Rest of your global styles */
+

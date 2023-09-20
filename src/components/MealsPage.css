@@ -1,0 +1,40 @@
+/* MealsPage.css */
+.page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .heading {
+    color: blue;
+  }
+  
+  /* Media query for screens with a max-width of 768px (typical mobile devices) */
+  @media (max-width: 768px) {
+    .page {
+      padding: 10px; /* Decrease padding for smaller screens */
+    }
+  
+    .heading {
+      font-size: 24px; /* Increase font size for headings */
+    }
+    
+    .menu-list {
+      text-align: left; /* Adjust the text alignment for mobile */
+    }
+  
+    .menu-item {
+      border-bottom: 1px solid #ccc; /* Add a separator between menu items */
+      padding: 10px 0; /* Add some space between menu items */
+    }
+  
+    .sub-heading {
+      font-size: 18px; /* Adjust the sub-heading font size for mobile */
+    }
+  }
+  

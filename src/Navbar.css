@@ -1,0 +1,56 @@
+/* Navbar.css */
+
+/* ... Previous styles ... */
+
+/* Hamburger icon styles */
+.hamburger {
+    display: none; /* Hide by default on desktop */
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: 0.4s;
+  }
+  
+  /* Media query to show/hide hamburger icon and menu */
+  @media screen and (max-width: 768px) {
+    /* Display hamburger icon on mobile */
+    .hamburger {
+      display: block;
+    }
+  
+    /* Hide navigation links by default on mobile */
+    ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #0077b6;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+    }
+  
+    ul.open {
+      display: flex;
+    }
+  
+    /* Styles for open mobile menu */
+    .bar.open:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .bar.open:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .bar.open:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  

@@ -1,0 +1,57 @@
+/* GalleryPage.css */
+
+/* Styles for the gallery page */
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center align the content */
+  }
+  
+  h2 {
+    color: #0077b6;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Image grid styles */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Center-align grid items */
+  }
+  
+  /* Individual image item styles */
+  .image-item {
+    background-color: #f4f4f4; /* Background color for the image items */
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add a smooth transform animation */
+  }
+  
+  .image-item:hover {
+    transform: scale(1.05); /* Enlarge image item on hover */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add rounded corners to images */
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+      gap: 10px; /* Reduce gap between items */
+    }
+  }
+  
+  

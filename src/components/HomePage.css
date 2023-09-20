@@ -1,0 +1,16 @@
+/* HomePage.css */
+
+/* Styles for the home page */
+.home-container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  h2 {
+    color: #0077b6;
+  }
+  
+  /* Rest of your existing styles for other elements */
+  

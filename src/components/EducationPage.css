@@ -1,0 +1,36 @@
+/* EducationPage.css */
+
+/* Unique styles for the education page */
+.unique-education-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .unique-h2 {
+    color: #0077b6;
+  }
+  
+  .unique-program-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .unique-program-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .unique-h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .unique-p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  

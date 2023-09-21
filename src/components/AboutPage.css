@@ -1,0 +1,91 @@
+/* AboutPage.css */
+
+/* Style the about container */
+.unique-education-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the heading */
+  .unique-h2 {
+    color: #0077b6;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the image slider */
+  .image-slider {
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-slider img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Add animation on hover for the image */
+  .image-slider:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Style the mission text */
+  .unique-h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .unique-p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Style the slider container to control its height */
+  .image-slider-container {
+    height: 300px; /* Set the height for the slider container */
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the slider content */
+  .image-slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Style the slider navigation (dots) */
+  .slider-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .slider-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #0077b6;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-dot.active {
+    background-color: #333;
+  }
+  

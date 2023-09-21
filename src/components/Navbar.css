@@ -36,7 +36,7 @@ nav {
   
   /* Logo styles */
   .logo {
-    width: 50px;
+    width: 60px;
     height: auto;
     margin-right: 10px; /* Add margin to separate the logo from text */
   }
@@ -85,6 +85,7 @@ nav {
       transform: scaleY(0); /* Initially closed with no height */
       transform-origin: top;
       transition: transform 0.4s ease-in-out;
+      line-height: 40px;
     }
   
     ul.open {
@@ -105,3 +106,46 @@ nav {
     }
   }
   
+
+
+
+ /* Navbar.css */
+
+/* Style the logo text */
+.logo-text {
+display: block;
+  align-items: center;
+  font-size: 24px; /* Adjust the font size as needed */
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Style individual letters */
+.logo-text .letter-l {
+  color: #FF5733; /* Set the color for "L" */
+}
+
+.logo-text .letter-i {
+  color: #3498db; /* Set the color for "I" */
+}
+
+.logo-text .letter-t1 {
+  color: #e7e43c; /* Set the color for the first "T" */
+}
+
+.logo-text .letter-t2 {
+  color: #9B59B6; /* Set the color for the second "T" */
+}
+
+.logo-text .letter-e {
+  color: #2ECC71; /* Set the color for "E" */
+}
+.logo-text .desh{
+  color: #fdfeff; /* Set the color for "I" */
+}
+
+.logo-text .letter-i2 {
+  color: #d6dbd9; /* Set the color for "I" */
+}
+.logo-text .letter-q {
+  color: #F1C40F; /* Set the color for "Q" */
+}

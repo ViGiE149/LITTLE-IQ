@@ -1,16 +1,68 @@
 /* HomePage.css */
 
-/* Styles for the home page */
+/* Style the home container */
 .home-container {
-    max-width: 800px; /* Adjust the max-width as needed */
-    margin: 0 auto;
-    padding: 20px;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-  }
-  
-  h2 {
-    color: #0077b6;
-  }
-  
-  /* Rest of your existing styles for other elements */
-  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 100%;
+  padding: 15px;
+  background-image: url('../assets/background.png'); /* Check the image path */
+  background-size: cover;
+  background-position: center;
+  color: #0e0d0d; /* Change text color for better readability on the background */
+padding-top: 0px;
+font-weight: 300;
+font-style: oblique;
+
+
+ 
+}
+
+/* Style the Hero section */
+.hero {
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Style the content container */
+.content-container {
+  text-align: left; /* Align content to the left */
+  max-width: 800px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center align the content horizontally */
+  padding: 20px;
+
+
+
+  color: #333; /* Change text color for better readability on the background */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  opacity: 0.9; /* Adjust the opacity for the glass effect */
+}
+
+/* Style the Subheadline */
+.subheadline {
+  font-size: 24px;
+  margin: 40px 0;
+}
+
+/* Style the CTA button */
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; // Import your CSS file
+import logo from '../assets/logo2.jpeg';
 
 function Navbar() {
   // State to track whether the mobile menu is open
@@ -28,13 +29,21 @@ function Navbar() {
     <nav>
       <div className="logo-container">
         <Link to="/">
-          <img src="logo.png" alt="Little IQ Logo" className="logo" />
+        <img src={logo} alt="Little IQ Logo" className="logo" />
         </Link>
         <div className="logo-text">
-          <span>LITTLE-</span>
-          <span className="iq">IQ</span>
+          <span className="letter-l">L</span>
+          <span className="letter-i">I</span>
+          <span className="letter-t1">T</span>
+          <span className="letter-t2">T</span>
+          <span className="letter-l2">L</span>
+          <span className="letter-e">E</span>
+          <span className="desh">-</span>
+          <span className="letter-i2">I</span>
+          <span className="letter-q">Q</span>
         </div>
       </div>
+   
       {/* Hamburger icon for mobile */}
       <div className={`hamburger${mobileMenuOpen ? ' open' : ''}`} onClick={toggleMobileMenu}>
         <div className="bar"></div>

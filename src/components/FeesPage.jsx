@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 function FeesPage() {
   return (
+    <div className="container-main">
     <div className="container">
       <h2>Fees</h2>
       <h3>Registration Fee</h3>
@@ -24,6 +25,7 @@ function FeesPage() {
         <p>If you have any questions or would like to enroll your child in our programs, please don't hesitate to contact us. We'd love to assist you!</p>
         <Link to="/contact" className="cta-button">Contact Us</Link>
       </div>
+    </div>
     </div>
   );
 }

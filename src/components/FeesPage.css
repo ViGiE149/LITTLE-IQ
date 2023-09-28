@@ -1,11 +1,19 @@
+.container-main{
+  width: 100%;
+  background-image: url('../assets/feesBack.jpg'); /* Check the image path */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
 .container {
   font-family: Arial, sans-serif;
-  max-width: 800px;
+  max-width: 550px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   border-radius: 5px;
+  
 }
 
 h2 {

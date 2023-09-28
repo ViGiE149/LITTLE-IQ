@@ -104,6 +104,11 @@ nav {
     .bar.open:nth-child(3) {
       transform: rotate(45deg) translate(-5px, -6px);
     }
+
+    ul li:hover ul.dropdown{
+      display: block;
+      line-height: 30px;
+    }
   }
   
 
@@ -148,4 +153,23 @@ display: block;
 }
 .logo-text .letter-q {
   color: #F1C40F; /* Set the color for "Q" */
+}
+
+
+
+.dropdown-details{
+ color: #0e0d0d;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+ul li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li:hover ul.dropdown{
+  display: block;
+  line-height: 30px;
 }

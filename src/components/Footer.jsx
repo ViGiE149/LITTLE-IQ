@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p>&copy; 2023 vigie solutions. All rights reserved.</p>
-        <p>Contact: vgwala149@gmail.com</p>
+        {/* <p>Contact:vgwala149@gmail.com</p> */}
       </div>
     </footer>
   );

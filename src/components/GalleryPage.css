@@ -53,5 +53,31 @@
       gap: 10px; /* Reduce gap between items */
     }
   }
+
+
+  
+/* GalleryPage.css */
+
+.filter-options {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #005b82;
+}
+
   
   

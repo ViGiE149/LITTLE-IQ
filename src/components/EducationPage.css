@@ -1,36 +1,49 @@
 /* EducationPage.css */
 
-/* Unique styles for the education page */
-.unique-education-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .unique-h2 {
-    color: #0077b6;
-  }
-  
-  .unique-program-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .unique-program-item {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  .unique-h3 {
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .unique-p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-  }
-  
+.education-container {
+  max-width:1500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fdfdfc; /* A light yellow background color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-header {
+  color: #1976D2; /* A bright blue color for the header */
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.program-item {
+  padding: 20px;
+  border: 1px solid #FFD54F; /* A lighter yellow border color */
+  background-color: #faf4ba; /* A bright yellow background color */
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program-item:hover {
+  transform: scale(1.05);
+}
+
+.program-title {
+  font-size: 20px;
+  color: #1976D2; /* Match the header color */
+  margin-bottom: 10px;
+}
+
+.program-description {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+

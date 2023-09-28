@@ -1,8 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './HomePage.css';
 
 
 function HomePage() {
+  const [marginTop, setMarginTop] = useState(130);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbarHeight = document.querySelector('nav').offsetHeight;
+      const scrollTop = window.scrollY || window.pageYOffset;
+
+      // Adjust margin-top based on scroll position and navbar height
+      setMarginTop(navbarHeight - Math.min(navbarHeight, scrollTop));
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+
+
   return (
     <div className="home-container">
       <div className="hero">
@@ -11,7 +34,7 @@ function HomePage() {
         <a href="#cta" className="cta-button">Learn More</a>
       </div>
 
-      <div className="content-container">
+      <div className="content-container" style={{ marginTop: `${marginTop}px` }}>
         <div className="subheadline">
         <p>
       At Little IQ Creche, we go beyond traditional childcare.

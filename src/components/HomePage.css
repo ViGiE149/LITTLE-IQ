@@ -10,12 +10,8 @@
   background-size: cover;
   background-position: center;
   color: #0e0d0d; /* Change text color for better readability on the background */
-padding-top: 0px;
-font-weight: 300;
-font-style: oblique;
-
-
- 
+  padding-top: 0px;
+  font-weight: 300;
 }
 
 /* Style the Hero section */
@@ -40,9 +36,7 @@ font-style: oblique;
   max-width: 800px; /* Set a maximum width for the content */
   margin: 0 auto; /* Center align the content horizontally */
   padding: 20px;
-
-margin-top: 130px;
-
+  margin-top: 130px;
   background-color: white;
   backdrop-filter: blur(8px); /* Apply a blur effect to the background */
   opacity: 0.9; /* Adjust the opacity for the glass effect */
@@ -68,18 +62,16 @@ margin-top: 130px;
 .cta-button:hover {
   background-color: #0056b3;
 }
-.subheadline p, .cta p{
-  color:#242323;
-  /* //background-color: #fff; */
 
+.subheadline p, .cta p {
+  color: #242323;
 }
 
 @media screen and (max-width: 768px) {
   /* Display hamburger icon on mobile */
-  .home-container{
+  .home-container {
     background-image: url('../assets/background.png'); /* Check the image path */
     background-size: cover;
     background-position: center;
   }
-
 }

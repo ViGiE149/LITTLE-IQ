@@ -24,12 +24,14 @@ font-style: oblique;
 }
 
 .hero h2 {
-  font-size: 36px;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 18px;
+  color: #313131;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Style the content container */
@@ -39,10 +41,10 @@ font-style: oblique;
   margin: 0 auto; /* Center align the content horizontally */
   padding: 20px;
 
+margin-top: 130px;
 
-
-  color: #333; /* Change text color for better readability on the background */
-  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  background-color: white;
+  backdrop-filter: blur(8px); /* Apply a blur effect to the background */
   opacity: 0.9; /* Adjust the opacity for the glass effect */
 }
 
@@ -65,4 +67,19 @@ font-style: oblique;
 
 .cta-button:hover {
   background-color: #0056b3;
+}
+.subheadline p, .cta p{
+  color:#242323;
+  /* //background-color: #fff; */
+
+}
+
+@media screen and (max-width: 768px) {
+  /* Display hamburger icon on mobile */
+  .home-container{
+    background-image: url('../assets/background.png'); /* Check the image path */
+    background-size: cover;
+    background-position: center;
+  }
+
 }

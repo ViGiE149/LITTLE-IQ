@@ -62,11 +62,15 @@ function Navbar() {
         {/* Add "2024 Information" link with dropdown */}
       
        
-        <li >
-        <summary>2024 Information</summary>
-          <ul  className="dropdown" >
-              <li className="dropdown-details" onClick={closeMobileMenu}><Link className="dropdown-details" to="/enrolment-form">Enrolment Form</Link></li>
-              <li className="dropdown-details" onClick={closeMobileMenu}><Link className="dropdown-details"  to="/fees">Fees</Link></li>
+        <li>
+          <span onClick={toggleInfoDropdown}>2024 Information</span>
+          <ul className={`dropdown ${infoDropdownOpen ? 'open' : ''}`}>
+            <li className="dropdown-details" onClick={closeMobileMenu}>
+              <Link className="dropdown-details" to="/enrolment-form">Enrolment Form</Link>
+            </li>
+            <li className="dropdown-details" onClick={closeMobileMenu}>
+              <Link className="dropdown-details" to="/fees">Fees</Link>
+            </li>
           </ul>
         </li>
         {/* Add Meals link */}

@@ -40,6 +40,7 @@
   background-color: white;
   backdrop-filter: blur(8px); /* Apply a blur effect to the background */
   opacity: 0.9; /* Adjust the opacity for the glass effect */
+  
 }
 
 /* Style the Subheadline */
@@ -74,4 +75,20 @@
     background-size: cover;
     background-position: center;
   }
+ 
+
+.apart-ul{
+  display: block;
+  
 }
+}
+
+@media screen and (max-width: 803px){
+  .apart-ul{
+    text-align: start;
+  display: contents;
+  list-style:circle ;
+  }
+}
+
+

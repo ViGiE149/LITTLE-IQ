@@ -23,18 +23,15 @@ function HomePage() {
     };
   }, []);
 
-
-
-
   return (
     <div className="home-container">
       <div className="hero">
         <h2>Welcome to Little IQ Creche</h2>
         <p>We provide a loving and educational environment for children to grow, learn, and explore.</p>
-        <a href="#cta" className="cta-button">Learn More</a>
+        <a href="#learn-more" className="cta-button">Learn More</a>
       </div>
 
-      <div className="content-container" style={{ marginTop: `${marginTop}px` }}>
+      <div className="content-container" id="learn-more">
         <div className="subheadline">
         <p>
       At Little IQ Creche, we go beyond traditional childcare.
@@ -47,7 +44,7 @@ function HomePage() {
 
         <div className="features">
         <h3>What Sets Us Apart</h3>
-    <ul>
+    <ul className="apart-ul">
       <li>Engaging Learning Spaces</li>
       <li>Personalized Attention for Every Child</li>
       <li>Holistic Approach to Early Education</li>

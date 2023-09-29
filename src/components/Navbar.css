@@ -9,6 +9,7 @@ nav {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 100;
   }
   
   ul {
@@ -65,7 +66,7 @@ nav {
   }
   
   /* Media query to show/hide hamburger icon and menu */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 821px) {
     /* Display hamburger icon on mobile */
     .hamburger {
       display: block;

@@ -20,6 +20,7 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center; /* Center-align grid items */
+    margin-bottom: 20px;
   }
   
   /* Individual image item styles */
@@ -54,8 +55,6 @@
     }
   }
 
-
-  
 /* GalleryPage.css */
 
 .filter-options {

@@ -14,16 +14,16 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-       <Route path="/education" element={<EducationPage />} />
+        <Route path="/education" element={<EducationPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/fees" element={<FeesPage />} /> {/* Add a route for the FeesPage */}
-        <Route path="/meals" element={<MealsPage />} /> {/* Add a route for the MealsPage */}
+        <Route path="/fees" element={<FeesPage />} /> 
+        <Route path="/meals" element={<MealsPage />} /> 
       </Routes>
       <Footer />
     </Router>

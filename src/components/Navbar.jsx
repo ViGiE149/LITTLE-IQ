@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; // Import your CSS file
 import logo from '../assets/logo2.jpeg';
+import form from '../assets/form.docx';
 
 function Navbar() {
   // State to track whether the mobile menu is open
@@ -66,7 +67,7 @@ function Navbar() {
           <span onClick={toggleInfoDropdown}>2024 Information</span>
           <ul className={`dropdown ${infoDropdownOpen ? 'open' : ''}`}>
             <li className="dropdown-details" onClick={closeMobileMenu}>
-              <Link className="dropdown-details" to="/enrolment-form">Enrolment Form</Link>
+              <a className="dropdown-details" href={form} download>Enrolment Form</a>
             </li>
             <li className="dropdown-details" onClick={closeMobileMenu}>
               <Link className="dropdown-details" to="/fees">Fees</Link>

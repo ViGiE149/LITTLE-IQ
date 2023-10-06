@@ -156,7 +156,13 @@ display: block;
 
 
 .dropdown-details{
- color: #0d0e0e;
+ color: #fafcfc;
+}
+.dropdown-details2{
+  color: black;
+}
+span{
+color: rgb(219, 215, 215);
 }
 
 ul li ul.dropdown li{

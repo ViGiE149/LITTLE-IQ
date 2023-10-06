@@ -71,7 +71,7 @@
 @media screen and (max-width: 768px) {
   /* Display hamburger icon on mobile */
   .home-container {
-    background-image: url('../assets/background.png'); /* Check the image path */
+    background-image: url('../assets/background.jpg'); /* Check the image path */
     background-size: cover;
     background-position: center;
   }

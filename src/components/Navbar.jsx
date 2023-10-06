@@ -69,8 +69,8 @@ function Navbar() {
             <li className="dropdown-details" onClick={closeMobileMenu}>
               <a className="dropdown-details" href={form} download>Enrolment Form</a>
             </li>
-            <li className="dropdown-details" onClick={closeMobileMenu}>
-              <Link className="dropdown-details" to="/fees">Fees</Link>
+            <li className="dropdown-details2" onClick={closeMobileMenu}>
+              <Link className="dropdown-details2" to="/fees">Fees</Link>
             </li>
           </ul>
         </li>

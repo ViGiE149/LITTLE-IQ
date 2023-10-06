@@ -87,7 +87,7 @@ button[type="submit"]:hover {
 /* Style map (adjust the height as needed) */
 .map {
   flex: 1;
-  height: 600px; /* Set the height for the map container */
+  height: 644px; /* Set the height for the map container */
 }
 
 /* Responsive layout for mobile */

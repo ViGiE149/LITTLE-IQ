@@ -32,9 +32,20 @@ function ContactPage() {
         <p>If you have any questions or would like to get in touch with us, please use the contact information below:</p>
 
         <div className="contact-info">
-          <p><strong>Address:</strong> 123 Main Street, City, Country</p>
-          <p><strong>Email:</strong> vgwala149@gmail.com</p>
-          <p><strong>Phone:</strong> 0784915138</p>
+          <p><strong>Address:</strong><div> <p></p>
+          <p>37 Phunga road unit 2 extension</p>
+          <p>Mpumalanga township</p>
+          <p>hammersdale</p>
+          <p>3699</p>
+         
+ </div></p>
+        
+        
+           
+          <p><strong>Email:</strong><a className="contact-2-info" href="mailto:littleiqs2023@gmail.com"><span>littleiqs2023@gmail.com</span></a></p>
+
+           <p><strong>Phone:</strong> <a  className="contact-2-info"  href="tel:0823656862"><span>0823656862</span></a></p>
+
         </div>
 
         <h3>Contact Form</h3>
@@ -68,7 +79,7 @@ function ContactPage() {
           title="Google Map"
           width="100%"
           height="100%"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.2891081582047!2d31.035357374841322!3d-29.855935075019108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a84a0a9c59e7%3A0x2ecd5dd9b1a70d9e!2sLonsdale%20Residence!5e0!3m2!1sen!2sza!4v1695285993964!5m2!1sen!2sza"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11645.479376698997!2d30.622922579234377!3d-29.800137847931754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6f18bde9ee64f%3A0xce4f18abe718c6f9!2sPhunga%20Rd%2C%20Mpumalanga%20B%2C%20Mpumalanga%2C%203699!5e0!3m2!1sen!2sza!4v1697701284794!5m2!1sen!2sza"
           frameBorder="0"
           allowFullScreen
         ></iframe>

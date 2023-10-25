@@ -87,7 +87,7 @@ button[type="submit"]:hover {
 /* Style map (adjust the height as needed) */
 .map {
   flex: 1;
-  height: 644px; /* Set the height for the map container */
+  height: 775px; /* Set the height for the map container */
 }
 
 /* Responsive layout for mobile */
@@ -104,4 +104,12 @@ button[type="submit"]:hover {
     margin-right: 0; /* Remove spacing between form and map */
     margin-top: 20px;
   }
+}
+.contact-2-info {
+  text-decoration: none;
+  color: #080808;
+}
+span{
+  color: #615b5b;
+  font-weight: 400;
 }

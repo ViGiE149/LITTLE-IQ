@@ -42,6 +42,8 @@ function Navbar() {
           <span className="desh">-</span>
           <span className="letter-i2">I</span>
           <span className="letter-q">Q</span>
+          <span className="letter-">'</span>
+          <span className="letter-S">S</span>
         </div>
       </div>
    

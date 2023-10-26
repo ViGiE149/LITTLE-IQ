@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
-import './ContactPage.css';
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import "./ContactPage.css";
 
 function ContactPage() {
   const [loading, setLoading] = useState(false);
@@ -13,39 +13,57 @@ function ContactPage() {
     setLoading(true);
 
     // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual Email.js credentials
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-        setLoading(false);
-        setSuccess(true);
-        console.log(result.text);
-      }, (error) => {
-        setLoading(false);
-        setError(true);
-        console.log(error.text);
-      });
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .then(
+        (result) => {
+          setLoading(false);
+          setSuccess(true);
+          console.log(result.text);
+        },
+        (error) => {
+          setLoading(false);
+          setError(true);
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <div className="contact-page">
       <div className="form-container">
         <h2>Contact Us</h2>
-        <p>If you have any questions or would like to get in touch with us, please use the contact information below:</p>
+        <p>
+          If you have any questions or would like to get in touch with us,
+          please use the contact information below:
+        </p>
 
         <div className="contact-info">
-          <p><strong>Address:</strong><div> <p></p>
-          <p>37 Phunga road unit 2 extension</p>
-          <p>Mpumalanga township</p>
-          <p>hammersdale</p>
-          <p>3699</p>
-         
- </div></p>
-        
-        
-           
-          <p><strong>Email:</strong><a className="contact-2-info" href="mailto:littleiqs2023@gmail.com"><span>littleiqs2023@gmail.com</span></a></p>
+          <p>
+            <strong>Address:</strong>
+            <div>
+              {" "}
+              <p></p>
+              <p>37 Phunga road unit 2 extension</p>
+              <p>Mpumalanga township</p>
+              <p>hammersdale</p>
+              <p>3699</p>
+            </div>
+          </p>
 
-           <p><strong>Phone:</strong> <a  className="contact-2-info"  href="tel:0823656862"><span>0823656862</span></a></p>
+          <p>
+            <strong>Email:</strong>
+            <a className="contact-2-info" href="mailto:littleiqs2023@gmail.com">
+              <span>littleiqs2023@gmail.com</span>
+            </a>
+          </p>
 
+          <p>
+            <strong>Phone:</strong>{" "}
+            <a className="contact-2-info" href="tel:0823656862">
+              <span>0823656862</span>
+            </a>
+          </p>
         </div>
 
         <h3>Contact Form</h3>

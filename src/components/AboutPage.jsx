@@ -42,16 +42,49 @@ function AboutPage() {
 
       <h3 className="unique-h3">Our Mission</h3>
       <p className="unique-p">
-        Our mission is to foster creativity, curiosity, and a love for learning
-        in every child. We believe that every child has unique talents and
-        potential, and our dedicated staff is committed to helping them
-        discover and develop these qualities.
+        Offering a warm and safe environment before anything is the biggest
+       goal also with quality education that is provided from a close and 
+       personal attention to each child which is essential for quality 
+       experience to all children. Adequate personnel will be hired to ensure
+        each child has the proper supervision whilst in our care
       </p>
 
       <h3 className="unique-h3">Our Programs</h3>
       <p className="unique-p">
-        We offer a range of programs tailored to different age groups, from infants to preschoolers. Our programs include:
+      Little IQ's will offer child care services for kids between 
+      the ages of 6 months and 6 years,
+      we will be offering services from 06:30 am to 17:00 pm. 
+      Children will be exposed to arts; crafts; general learning;
+       group activities; problem solving skills; musicals; socialising
+       for our infants we will be providing them with visual equipments
+        that helps arouse their little minds and sounds. We care for every 
+        students growing mind and body.
       </p>
+
+
+      <h3 className="unique-h3">Objectives</h3>
+      <p className="unique-p">
+      to develop a sustainable, profitable start-up business
+     create a service based operation whose primary goal is to 
+     exceed customers expectations
+      </p>
+
+      <h3 className="unique-h3">Key to success</h3>
+      <p className="unique-p">
+     
+    <li>The quality of service being offered</li>
+    <li>Creating and maintaining a highly regarded reputation</li>
+    <li>Certified educators and child workers</li>
+    <li>Marketing</li>
+    <li>Competitive pricing</li>
+    <li>Flexible hours</li>
+
+      </p>
+
+
+
+
+
       <ul>
         <li>Infant Care</li>
         <li>Toddler Playgroup</li>

@@ -53,6 +53,9 @@
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
       gap: 10px; /* Reduce gap between items */
     }
+    .image-item:hover {
+      transform: scale(1.4); /* Enlarge image item on hover */
+    }
   }
 
 /* GalleryPage.css */

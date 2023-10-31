@@ -6,6 +6,10 @@ body {
   overflow-x: hidden; /* Hide horizontal overflow */
 
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
 
 /* Rest of your global styles */
 

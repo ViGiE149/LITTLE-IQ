@@ -20,6 +20,12 @@ import hart1 from '../assets/event-hart-day.jpeg';
 import story1 from '../assets/story-day-classroom.jpeg'; 
 import ms1 from '../assets/massage1.jpeg'; 
 import perents1 from '../assets/perents.jpeg';
+import movie1 from '../assets/movie1.jpeg';
+import littleIq from '../assets/little iq icon.jpeg';
+import birthday2 from '../assets/birthday2.jpeg';
+import kids from '../assets/kids.jpeg';
+import ms2 from '../assets/haritage.jpeg';
+import MD from '../assets/Md.mp4';
 
 function GalleryPage() {
   const [selectedFilter, setSelectedFilter] = useState('all');
@@ -33,31 +39,38 @@ function GalleryPage() {
       case 'uniform':
         return [uniform1,uniform2,uniform3,uniform4]; // Include only images related to uniforms
       case 'classrooms':
-        return [classroom2, classroom3,school1]; // Include only images related to classrooms
+        return [school1,movie1, kids,classroom3,classroom2]; // Include only images related to classrooms
       case 'staff':
-        return [Image5]; // Include only images related to staff
+        return [MD]; // Include only images related to staff
       case 'events':
-        return [red, zoo1, hunting1]; // Include only images related to events
+        return [red, zoo1, hunting1,ms2]; // Include only images related to events
       default:
         // 'all' filter or unknown filter, include all images
-        return [Image1, Image2, Image3, Image4, Image5,uniform1,uniform2,uniform3,uniform4,classroom2, classroom3,my_girl,uniform4,red,hart1,zoo1, hunting1,story1,ms1,perents1];
+        return [littleIq,ms1,Image1, Image2, Image3, Image4,birthday2,ms2,Image5,uniform1,uniform2,uniform3,uniform4,classroom2, classroom3,my_girl,uniform4,red,hart1,zoo1, hunting1,story1,perents1];
     }
   };
 
   return (
     <div className="gallery-container">
       <h2>Gallery</h2>
-      <div className="filter-options">
+      <div>
         <button onClick={() => handleFilterChange('all')}>All</button>
         <button onClick={() => handleFilterChange('uniform')}>Uniform</button>
         <button onClick={() => handleFilterChange('classrooms')}>Classrooms</button>
-        <button onClick={() => handleFilterChange('staff')}>Staff</button>
+        <button onClick={() => handleFilterChange('staff')}>Videos</button>
         <button onClick={() => handleFilterChange('events')}>Events</button>
       </div>
       <div className="image-grid">
         {filterImages().map((image, index) => (
           <div className="image-item" key={index}>
-            <img src={image} alt={`Image ${index + 1}`} />
+            {selectedFilter === 'staff' ? (
+              <video controls>
+                <source src={image} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <img src={image} alt={`Image ${index + 1}`} />
+            )}
             <p>{`Image ${index + 1} Description`}</p>
           </div>
         ))}
@@ -65,5 +78,4 @@ function GalleryPage() {
     </div>
   );
 }
-
 export default GalleryPage;

@@ -36,7 +36,7 @@
     transform: scale(1.05); /* Enlarge image item on hover */
   }
   
-  img {
+  img ,video{
     max-width: 100%;
     height: auto;
     border-radius: 5px; /* Add rounded corners to images */
@@ -49,13 +49,21 @@
   
   /* Media query for smaller screens */
   @media screen and (max-width: 768px) {
-    .image-grid {
+    .image-grid ,.video-grid{
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
       gap: 10px; /* Reduce gap between items */
     }
     .image-item:hover {
       transform: scale(1.4); /* Enlarge image item on hover */
     }
+.filter-options{
+display:inline-block;
+
+
+}
+
+
+    
   }
 
 /* GalleryPage.css */

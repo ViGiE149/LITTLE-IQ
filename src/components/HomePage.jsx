@@ -26,7 +26,7 @@ function HomePage() {
   return (
     <div className="home-container">
       <div className="hero">
-        <h2>Welcome to Little IQ Creche</h2>
+        <h2>Welcome to Little IQ's Creche</h2>
         <p>We provide a loving and educational environment for children to grow, learn, and explore.</p>
         <a href="#learn-more" className="cta-button">Learn More</a>
       </div>
@@ -34,7 +34,7 @@ function HomePage() {
       <div className="content-container" id="learn-more">
         <div className="subheadline">
         <p>
-      At Little IQ Creche, we go beyond traditional childcare.
+      At Little IQ's Creche, we go beyond traditional childcare.
        We are a haven for young minds,
       fostering an environment where curiosity is celebrated and creativity knows no bounds.
       Our team of passionate educators is dedicated to providing a nurturing space for your child's
@@ -53,7 +53,7 @@ function HomePage() {
     <h3>Join the Little IQ Family</h3>
     <p>
       Choosing the right early learning environment is a crucial decision for your child's future.
-      We invite you to explore Little IQ Creche and discover why we are more than just a childcare center –
+      We invite you to explore Little IQ's Creche and discover why we are more than just a childcare center –
       we are a community where little minds thrive.
     </p>
         </div>

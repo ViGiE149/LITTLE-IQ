@@ -3,7 +3,7 @@
   background-image: url('../assets/feesBack.jpg'); /* Check the image path */
   background-size: cover;
   background-position: center;
-  height: 11%;
+  height: 13%;
 }
 .container {
   font-family: Arial, sans-serif;
@@ -14,16 +14,17 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   height: 80%;
-  
+  margin-bottom: 30px;
 }
 
 h2 {
   color: #0077b6;
+  margin-top: -9px;
 }
 
 h3 {
   color: #333;
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 p {
@@ -61,3 +62,11 @@ li.fee-item {
 .cta-button:hover {
   background-color: #0056a5;
 }
+.fee-list{
+  display: contents;
+}
+
+
+/* Media query for mobile views where fee-list is hidden */
+
+

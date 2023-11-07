@@ -66,7 +66,7 @@ function Navbar() {
       
        
         <li>
-          <span onClick={toggleInfoDropdown}>2024 Information</span>
+          <span className='Information2024' onClick={toggleInfoDropdown}>2024 Information</span>
           <ul className={`dropdown ${infoDropdownOpen ? 'open' : ''}`}>
             <li className="dropdown-details" onClick={closeMobileMenu}>
               <a className="dropdown-details" href={form} download>Enrolment Form</a>

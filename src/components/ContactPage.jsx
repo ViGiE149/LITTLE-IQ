@@ -39,7 +39,7 @@ function ContactPage() {
         </p>
 
         <div className="contact-info">
-          <p>
+        
             <strong>Address:</strong>
             <div>
               {" "}
@@ -49,7 +49,7 @@ function ContactPage() {
               <p>hammersdale</p>
               <p>3699</p>
             </div>
-          </p>
+          
 
           <p>
             <strong>Email:</strong>

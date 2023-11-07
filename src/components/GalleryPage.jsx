@@ -71,7 +71,7 @@ function GalleryPage() {
             ) : (
               <img src={image} alt={`Image ${index + 1}`} />
             )}
-            <p>{`Image ${index + 1} Description`}</p>
+            
           </div>
         ))}
       </div>

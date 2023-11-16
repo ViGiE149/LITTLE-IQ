@@ -2,19 +2,73 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./ContactPage.css";
 
+const Loader = () => <div className="loader">Sending email...</div>;
+
 function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [formErrors, setFormErrors] = useState({});
+
+  const validateForm = (e) => {
+    e.preventDefault();
+    const errors = {};
+
+    const formData = new FormData(e.currentTarget);
+
+    if (!formData.get('name').trim()) {
+      errors.name = "Name is required";
+      alert("Name is required");
+      return;
+    }
+
+    if (!formData.get('subject').trim()) {
+      errors.subject = "Subject is required";
+      alert("Subject is required");
+      return;
+    }
+
+    if (!formData.get('email').trim()) {
+      errors.email = "Email is required";
+      alert("Email is required");
+      return;
+    }
+
+    if (!formData.get('message').trim()) {
+      errors.message = "Message is required";
+      alert("Message is required");
+      return;
+    }
+
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    setLoading(true);
+    if (!validateForm(e)) {
+      return;
+    }
 
-    // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual Email.js credentials
+    setLoading(true);
+    const formData = new FormData(e.currentTarget);
+
+    const templateParams = {
+      from_name: formData.get('name').trim(),
+      mail_from: formData.get('email').trim(),
+      mail_to: "vgwala149@gmail.com",
+      subject: formData.get('subject').trim(),
+      message: formData.get('message').trim(),
+    };
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .send(
+        "service_iht2ej9",
+        "template_ma66v75",
+        templateParams,
+        "sdec_-eHbbd95KUHJ"
+      )
       .then(
         (result) => {
           setLoading(false);
@@ -39,17 +93,14 @@ function ContactPage() {
         </p>
 
         <div className="contact-info">
-        
-            <strong>Address:</strong>
-            <div>
-              {" "}
-              <p></p>
-              <p>37 Phunga road unit 2 extension</p>
-              <p>Mpumalanga township</p>
-              <p>hammersdale</p>
-              <p>3699</p>
-            </div>
-          
+          <strong>Address:</strong>
+          <div>
+            <p></p>
+            <p>37 Phunga road unit 2 extension</p>
+            <p>Mpumalanga township</p>
+            <p>hammersdale</p>
+            <p>3699</p>
+          </div>
 
           <p>
             <strong>Email:</strong>
@@ -65,12 +116,17 @@ function ContactPage() {
             </a>
           </p>
         </div>
-
+        {loading && <Loader />}
         <h3>Contact Form</h3>
-        {loading && <p>Sending email...</p>}
+
         {success && <p>Email sent successfully!</p>}
         {error && <p>Error sending email. Please try again later.</p>}
-        <form onSubmit={sendEmail}>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            validateForm(e) && sendEmail(e);
+          }}
+        >
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" />
@@ -98,7 +154,7 @@ function ContactPage() {
           width="100%"
           height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11645.479376698997!2d30.622922579234377!3d-29.800137847931754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6f18bde9ee64f%3A0xce4f18abe718c6f9!2sPhunga%20Rd%2C%20Mpumalanga%20B%2C%20Mpumalanga%2C%203699!5e0!3m2!1sen!2sza!4v1697701284794!5m2!1sen!2sza"
-          frameBorder="0"
+          frameBorder="1"
           allowFullScreen
         ></iframe>
       </div>

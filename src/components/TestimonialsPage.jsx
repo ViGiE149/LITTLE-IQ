@@ -11,8 +11,8 @@ import './TestimonialsPage.css';
 const testimonials = [
   {
     id: 1,
-    author: 'Parent of Sophia',
-    text: "Little IQ Creche has been a second home for our daughter Sophia. The welcoming environment, coupled with skilled educators, has made her early years truly special. We appreciate the focus on both academic and social development.",
+    author: 'Parent of Anelisa',
+    text: "Little IQ Creche has been a second home for our daughter Anelisa. The welcoming environment, coupled with skilled educators, has made her early years truly special. We appreciate the focus on both academic and social development.",
     avatar: 'url_to_sophia_parent_avatar.jpg',
   },
   {

@@ -49,7 +49,7 @@ function AboutPage() {
         each child has the proper supervision whilst in our care
       </p>
 
-      <h3 className="unique-h3">Our Programs</h3>
+      <h3 className="unique-h3">Company summary</h3>
       <p className="unique-p">
       Little IQ's will offer child care services for kids between 
       the ages of 6 months and 6 years,

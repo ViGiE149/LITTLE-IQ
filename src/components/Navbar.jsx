@@ -43,7 +43,7 @@ function Navbar() {
           <span className="letter-i2">I</span>
           <span className="letter-q">Q</span>
           <span className="letter-">'</span>
-          <span className="letter-S">S</span>
+          <span className="letter-s">S</span>
         </div>
       </div>
    

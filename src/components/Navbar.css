@@ -123,23 +123,27 @@ display: block;
 
 /* Style individual letters */
 .logo-text .letter-l {
-  color: #FF5733; /* Set the color for "L" */
+  color: #0398fb; /* Set the color for "L" */
 }
 
 .logo-text .letter-i {
-  color: #3498db; /* Set the color for "I" */
+  color: #0398fb; /* Set the color for "I" */
 }
 
 .logo-text .letter-t1 {
-  color: #e7e43c; /* Set the color for the first "T" */
+  color: yellow;; /* Set the color for the first "T" */
 }
 
 .logo-text .letter-t2 {
-  color: #9B59B6; /* Set the color for the second "T" */
+  color: yellow; /* Set the color for the second "T" */
+}
+
+.logo-text .letter-l2 {
+  color: red; /* Set the color for "L" */
 }
 
 .logo-text .letter-e {
-  color: #2ECC71; /* Set the color for "E" */
+  color: red; /* Set the color for "E" */
 }
 .logo-text .desh{
   color: #fdfeff; /* Set the color for "I" */
@@ -149,6 +153,12 @@ display: block;
   color: #d6dbd9; /* Set the color for "I" */
 }
 .logo-text .letter-q {
+  color: #d6dbd9; /* Set the color for "Q" */
+}
+.logo-text .letter-s {
+  color: #F1C40F; /* Set the color for "Q" */
+}
+.logo-text .letter- {
   color: #F1C40F; /* Set the color for "Q" */
 }
 

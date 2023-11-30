@@ -21,24 +21,8 @@ const testimonials = [
         text: "Our experience with Little IQ Creche has been outstanding. The emphasis on interactive learning has ignited our son Ethan's curiosity. The regular updates and parent-teacher communication keep us involved in his educational journey.",
         avatar: 'url_to_ethan_parent_avatar.jpg',
     },
-    {
-        id: 3,
-        author: 'Parent of Mia and Noah',
-        text: 'As parents of twins, Mia and Noah, we sought a creche that values individuality. Little IQ exceeded our expectations. The personalized attention given to each child and the vibrant learning spaces make it a fantastic place for early education.',
-        avatar: 'url_to_mia_noah_parent_avatar.jpg',
-    },
-    {
-        id: 4,
-        author: 'Single Parent of Jayden',
-        text: "Being a single parent, finding the right creche for Jayden was crucial. Little IQ not only provided a safe and nurturing environment but also fostered a sense of community. Jayden loves going to 'school' and has made wonderful friends.",
-        avatar: 'url_to_jayden_parent_avatar.jpg',
-    },
-    {
-        id: 5,
-        author: 'Parent of Aria',
-        text: "Choosing Little IQ Creche was an easy decision for our family. Aria's growth, both academically and emotionally, has been remarkable. The holistic approach to early childhood education sets this creche apart. Grateful for the caring staff.",
-        avatar: 'url_to_aria_parent_avatar.jpg',
-    },
+   
+
     //////
     {
         id: 6,
@@ -51,6 +35,12 @@ const testimonials = [
         author: 'grandparent of Lubanzi Kweyama ',
         text: "Good day, Ey ,for me ,I am very impressed with Little I Q'S  creche,  my grandson is wto and will be 3 years next month Feb ,started this year mid year but already he is able to say English words, his communication skills has improved a lot, he is able to identify some of the animals Thanks to the teachers and the Principal of course, they are loving and caring  to our kids, should they notice that your child has any problem ,the will inform the parent, the teachers are so loving, the respect they have for the parents, Keep up the good work Little  I Q'S,  we love u, our kids or grandkids are in good hands.",
         avatar: 'url_to_aria_parent_avatar.jpg',
+    },
+    {
+        id: 3,
+        author: 'Parent of Mia and Noah',
+        text: 'As parents of twins, Mia and Noah, we sought a creche that values individuality. Little IQ exceeded our expectations. The personalized attention given to each child and the vibrant learning spaces make it a fantastic place for early education.',
+        avatar: 'url_to_mia_noah_parent_avatar.jpg',
     },
     {
       id: 8,

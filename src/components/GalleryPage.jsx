@@ -26,6 +26,13 @@ import birthday2 from '../assets/birthday2.jpeg';
 import kids from '../assets/kids.jpeg';
 import ms2 from '../assets/haritage.jpeg';
 import MD from '../assets/Md.mp4';
+import swimming from '../assets/swimming.jpg';
+import food from '../assets/Food.jpg';
+import evfood from '../assets/evfood.jpg';
+
+import vid2 from '../assets/Vid2.mp4';
+import vid3 from '../assets/Vid3.mp4';
+
 
 function GalleryPage() {
   const [selectedFilter, setSelectedFilter] = useState('all');
@@ -41,12 +48,12 @@ function GalleryPage() {
       case 'classrooms':
         return [school1,movie1, kids,classroom3,classroom2]; // Include only images related to classrooms
       case 'staff':
-        return [MD]; // Include only images related to staff
+        return [MD,vid2,vid3]; // Include only images related to staff
       case 'events':
-        return [red, zoo1, hunting1,ms2]; // Include only images related to events
+        return [red, zoo1, hunting1,ms2,evfood,food]; // Include only images related to events
       default:
         // 'all' filter or unknown filter, include all images
-        return [littleIq,ms1,Image1, Image2, Image3, Image4,birthday2,ms2,Image5,uniform1,uniform2,uniform3,uniform4,classroom2, classroom3,my_girl,uniform4,red,hart1,zoo1, hunting1,story1,perents1];
+        return [littleIq,ms1,Image1, Image2,swimming, Image3, Image4,evfood,birthday2,ms2,Image5,uniform1,uniform2,uniform3,uniform4,classroom2, classroom3,my_girl,uniform4,red,hart1,zoo1, hunting1,story1,perents1];
     }
   };
 

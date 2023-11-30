@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './AboutPage.css'; // Import your CSS file
-import owner1 from '../assets/owner1.jpg';
-import owner2 from '../assets/owner2.jpg';
-import teacher2 from '../assets/teacher2.jpg';
+
+import littleIq from '../assets/little iq.jpg';
+import mam from '../assets/Mam1.jpg';
 
 function AboutPage() {
   // Define the images for the slider
-  const sliderImages = [owner1, owner2, teacher2];
+  const sliderImages = [littleIq,mam];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -49,7 +49,7 @@ function AboutPage() {
         each child has the proper supervision whilst in our care
       </p>
 
-      <h3 className="unique-h3">Our Programs</h3>
+      <h3 className="unique-h3">Company summary</h3>
       <p className="unique-p">
       Little IQ's will offer child care services for kids between 
       the ages of 6 months and 6 years,
@@ -83,15 +83,15 @@ function AboutPage() {
 
 
 
+      <p className="unique-p">
 
 
-      <ul>
         <li>Infant Care</li>
         <li>Toddler Playgroup</li>
         <li>Preschool Education</li>
         <li>After-School Enrichment</li>
-      </ul>
-
+   
+      </p>
       <h3 className="unique-h3">Our Team</h3>
       <p className="unique-p">
         Our team consists of experienced and caring educators who are passionate about early childhood education. They create a supportive and stimulating environment where children can thrive.

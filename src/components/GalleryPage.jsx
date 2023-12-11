@@ -29,7 +29,7 @@ import MD from '../assets/Md.mp4';
 import swimming from '../assets/swimming.jpg';
 import food from '../assets/Food.jpg';
 import evfood from '../assets/evfood.jpg';
-
+import christmass from '../assets/christmass.mp4';
 import vid2 from '../assets/Vid2.mp4';
 import vid3 from '../assets/Vid3.mp4';
 
@@ -48,7 +48,7 @@ function GalleryPage() {
       case 'classrooms':
         return [school1,movie1, kids,classroom3,classroom2]; // Include only images related to classrooms
       case 'staff':
-        return [MD,vid2,vid3]; // Include only images related to staff
+        return [MD,christmass,vid2,vid3]; // Include only images related to staff
       case 'events':
         return [red, zoo1, hunting1,ms2,evfood,food]; // Include only images related to events
       default:

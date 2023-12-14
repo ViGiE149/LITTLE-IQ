@@ -1,5 +1,9 @@
 # Getting Started with Create React App
-# author vusumuzi gwala (gwala)
+# author vusumuzi gwala (vigie)
+
+# https://github.com/ViGiE149
+
+# vgwala149@gmail.com
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

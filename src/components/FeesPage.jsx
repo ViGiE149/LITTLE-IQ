@@ -13,9 +13,9 @@ function FeesPage() {
       <h3>Monthly Fees</h3>
       <p>We offer flexible monthly fee options based on your child's age and program:</p>
       <ul className="fee-list">
-        <li className="fee-item">Grade R: 0-2 years: R800/month</li>
-        <li className="fee-item">Grade RR:2-4 years: R650/month</li>
-        <li className="fee-item">Grade RRR:4-6 years: R650/month</li>
+        <li className="fee-item">Grade R: R800/month</li>
+        <li className="fee-item">Grade RR: R650/month</li>
+        <li className="fee-item">Grade RRR: R650/month</li>
         <li className="fee-item">Baby class : R700/month</li>
       </ul>
       

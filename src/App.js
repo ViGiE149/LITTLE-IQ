@@ -10,6 +10,9 @@ import FeesPage from './components/FeesPage';
 import './App.css';
 import MealsPage from './components/MealsPage';
 import Footer from './components/Footer';
+import PostPage from './components/PostPage';
+import ViewPostPage from './components/ViewPostPage';
+import ManagePostPage from './components/ManagePostsPage';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/fees" element={<FeesPage />} /> 
         <Route path="/meals" element={<MealsPage />} /> 
+        <Route path="/post" element={<PostPage />} /> 
+       <Route path="/viewpost" element={<ViewPostPage />} />  
+       <Route path="/managepost" element={<ManagePostPage />} />  
       </Routes>
       <Footer />
     </Router>

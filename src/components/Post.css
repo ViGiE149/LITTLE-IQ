@@ -1,0 +1,83 @@
+/* PostPage.css */
+
+.post-page-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-page-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.post-page-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-page-container label {
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.post-page-container textarea,
+.post-page-container input {
+  padding: 12px;
+  width: 90%;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.post-page-container textarea:focus,
+.post-page-container input:focus {
+  border-color: #4caf50;
+}
+
+.post-page-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.post-page-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.post-page-container button:hover {
+  background-color: #45a049;
+}
+
+.post-page-container p {
+  font-size: 16px;
+  color: #ff0000;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+  .post-page-container {
+    padding: 15px;
+  }
+
+  .post-page-container textarea,
+  .post-page-container input {
+    font-size: 14px;
+  }
+
+  .post-page-container button {
+    font-size: 16px;
+  }
+}

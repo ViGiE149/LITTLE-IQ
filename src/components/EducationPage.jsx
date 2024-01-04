@@ -26,7 +26,7 @@ function EducationPage() {
         </div>
       </div>
       <p className="">Education
-Goofy EducationOur classes are limited to only 15 learners per class to ensure personalised education.
+Goofy EducationOur classes are limited number of learners per class to ensure personalised education.
 Meeting with parents reporting on children’s progress: A parents evening is held on a quarterly basis when report cards go out. However if a teacher or parent has any concerns a separate meeting throughout the year can be arranged.</p>
     </div>
   );

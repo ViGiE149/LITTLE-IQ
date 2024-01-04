@@ -1,0 +1,52 @@
+/* ViewPost.css */
+
+.view-post-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.view-post-header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.loading-message, .error-message {
+  font-size: 16px;
+  color: #d9534f; /* Bootstrap's danger color */
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  border: 1px solid #f3b5b5;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #525050;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.post-list{
+  display: contents;
+}
+/* Add more styles as needed */

@@ -4,13 +4,14 @@ import './Navbar.css'; // Import your CSS file
 import logo from '../assets/logo2.jpeg';
 import form from '../assets/form.docx';
 
+
 function Navbar() {
   // State to track whether the mobile menu is open
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // State to track whether the "2024 Information" dropdown is open
   const [infoDropdownOpen, setInfoDropdownOpen] = useState(false);
-
+  const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
   // Function to toggle mobile menu
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -25,6 +26,10 @@ function Navbar() {
   const toggleInfoDropdown = () => {
     setInfoDropdownOpen(!infoDropdownOpen);
   };
+
+
+
+  
 
   return (
     <nav>
@@ -74,11 +79,20 @@ function Navbar() {
             <li className="dropdown-details2" onClick={closeMobileMenu}>
               <Link className="dropdown-details2" to="/fees">Fees</Link>
             </li>
+            <li className="dropdown-details2" onClick={closeMobileMenu}>
+              <Link className="dropdown-details2" to="/viewpost">Posts (announcements)</Link>
+            </li>
+            <li className="dropdown-details2" onClick={closeMobileMenu}>
+          
+              <Link className="dropdown-details2" to="/PasswordPage">Admin</Link>
+            </li>
           </ul>
+
         </li>
         {/* Add Meals link */}
         <li onClick={closeMobileMenu}><Link to="/meals">Meals</Link></li>
       </ul>
+   
     </nav>
   );
 }

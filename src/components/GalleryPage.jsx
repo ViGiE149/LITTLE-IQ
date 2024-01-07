@@ -53,7 +53,7 @@ function GalleryPage() {
         return [red, zoo1, hunting1,ms2,evfood,food]; // Include only images related to events
       default:
         // 'all' filter or unknown filter, include all images
-        return [littleIq,ms1,Image1, Image2,swimming, Image3, Image4,evfood,birthday2,ms2,Image5,uniform1,uniform2,uniform3,uniform4,classroom2, classroom3,my_girl,uniform4,red,hart1,zoo1, hunting1,story1,perents1];
+        return [littleIq,ms1,Image1, Image2,swimming, Image3, Image4,uniform4,birthday2,ms2,Image5,uniform1,uniform2,uniform3,uniform4,classroom2, classroom3,my_girl,evfood,red,hart1,zoo1, hunting1,story1,perents1];
     }
   };
 

@@ -4,7 +4,7 @@ import { storage, db } from './firebase';
 import { getStorage ,ref,uploadBytes, getDownloadURL,uploadBytesResumable} from "firebase/storage";
 import './Post.css';
 import { collection, addDoc, query, where, getDocs,serverTimestamp } from 'firebase/firestore';
-
+import { Link } from 'react-router-dom';
 
 
 const PostPage = () => {
@@ -111,7 +111,7 @@ const PostPage = () => {
       <h2>Create a New Post</h2>
       <form onSubmit={handlePostSubmit}>
         <label>
-          Text:
+          Text: <br />
           <textarea value={text} onChange={handleTextChange} />
         </label>
         <br />
@@ -126,9 +126,14 @@ const PostPage = () => {
         <button type="submit" disabled={loading}>
           Submit Post
         </button>
-         <button type="button">
+     
+         <Link className="post-link" to="/managepost" >
+         <button className="post-link" type="button">
           Manage Posts
-        </button>
+          </button>
+          </Link>
+       
+        
       </form>
     </div>
   );

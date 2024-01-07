@@ -25,15 +25,20 @@
   
   /* Individual image item styles */
   .image-item {
-    background-color: #f4f4f4; /* Background color for the image items */
+ /* Background color for the image items */
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease; /* Add a smooth transform animation */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .image-item:hover {
     transform: scale(1.05); /* Enlarge image item on hover */
+  
+    
   }
   
   img ,video{

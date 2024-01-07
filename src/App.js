@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 import PostPage from './components/PostPage';
 import ViewPostPage from './components/ViewPostPage';
 import ManagePostPage from './components/ManagePostsPage';
+import FeesUpdatePage from './components/FeesUpdatePage';
+import PasswordPage from './components/PasswordPage';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/post" element={<PostPage />} /> 
        <Route path="/viewpost" element={<ViewPostPage />} />  
        <Route path="/managepost" element={<ManagePostPage />} />  
+       <Route path="/feesupdate" element={<FeesUpdatePage />} /> 
+       <Route path="/PasswordPage" element={<PasswordPage />} />   
       </Routes>
       <Footer />
     </Router>

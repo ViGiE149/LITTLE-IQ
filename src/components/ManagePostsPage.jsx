@@ -4,6 +4,7 @@ import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import './ViewPost.css'; // Import your CSS file for styling
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
+import { Link } from 'react-router-dom';
 
 const ManagePostPage = () => {
   const [posts, setPosts] = useState([]);

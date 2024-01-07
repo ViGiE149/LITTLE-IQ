@@ -1,0 +1,79 @@
+/* feesUpdateStyles.css */
+
+/* Main container */
+.fees-update-container {
+    margin: 20px;
+  }
+  
+  /* Inner container */
+  .fees-update-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  .fees-update-heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .fees-update-subheading {
+    color: #555;
+    font-size: 20px;
+    margin-top: 16px;
+  }
+  
+  /* Input fields */
+  .fees-update-input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Lists */
+  .fees-update-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .fees-update-list-item {
+    margin: 8px 0;
+  }
+  
+  /* Save button */
+  .fees-update-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  hr {
+    background-color:rgb(189, 33, 33);
+  }
+  .fees-update-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  .fee-list,.fees-update-list-item, .fees-update-list{
+    display:contents;
+      }
+  
+  /* Add any additional styles as needed */
+  @media only screen and (max-width: 600px) {
+    /* Styles for mobile devices */
+    .fee-list,.fees-update-list-item, .fees-update-list{
+  display:contents;
+    }
+  }
+  

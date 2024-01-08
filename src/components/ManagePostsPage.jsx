@@ -69,14 +69,18 @@ const ManagePostPage = () => {
     }
   };
 
-  const handleEditPost = (postId) => {
-    // Implement the logic to navigate to the edit page with the postId
-    console.log(`Editing post with ID: ${postId}`);
-  };
+  // const handleEditPost = (postId) => {
+  //   // Implement the logic to navigate to the edit page with the postId
+  //   console.log(`Editing post with ID: ${postId}`);
+  // };
 
   return (
     <div className="view-post-page-container">
-      <h2 className="view-post-header">View Posts</h2>
+      <h2 className="view-post-header">View Posts</h2><span>    <Link className="post-li" to="/post" >
+         <button className="post-link" type="button">
+     back
+          </button>
+          </Link></span>
       {loading && <p className="loading-message">Loading posts...</p>}
       {error && <p className="error-message">{error}</p>}
       {!loading && !error && (
@@ -97,7 +101,7 @@ const ManagePostPage = () => {
               )}
               <p className="post-timestamp">Posted on: {formatDate(post.timestamp)}</p>
               <button onClick={() => handleDeletePost(post.id)}>Delete</button>
-              <button onClick={() => handleEditPost(post.id)}>Edit</button>
+              {/* <button onClick={() => handleEditPost(post.id)}>Edit</button> */}
             </li>
           ))}
         </ul>

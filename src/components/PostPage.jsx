@@ -132,6 +132,12 @@ const PostPage = () => {
           Manage Posts
           </button>
           </Link>
+
+          <Link className="post-link" to="/feesUpdate" >
+         <button className="post-link" type="button">
+          Update Fees
+          </button>
+          </Link>
        
         
       </form>

@@ -13,8 +13,9 @@ function FeesUpdatePage() {
     babyClass: '760',
   });
   const [aftercareFees, setAftercareFees] = useState({
-    aftercare_Learners: '650',
-    weekend_Aftercare_NonCatered: '150',
+    'applies_at_15:00mp': '50',
+    'aftercare_Learners(per_month)': '650',
+    'weekend_Aftercare_NonCatered(1_day)': '150',
     weekend_Aftercare_Catered: '750',
     sleepover: '350',
   });
@@ -143,6 +144,12 @@ function FeesUpdatePage() {
         <button className="fees-update-button" onClick={handleSaveChanges} disabled={loading}>
           {loading ? 'Saving...' : 'Save Changes'}
         </button>
+
+        <Link className="fees-link" to="/post" >
+         <button className="post-link" type="button">
+     back
+          </button>
+          </Link>
       </div>
     </div>
   );

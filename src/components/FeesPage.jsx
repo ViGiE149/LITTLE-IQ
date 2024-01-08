@@ -7,16 +7,16 @@ import { db } from './firebase';
 function FeesPage() {
   const [registrationFee, setRegistrationFee] = useState(300);
   const [monthlyFees, setMonthlyFees] = useState({
-    gradeR: 870,
-    gradeRR: 710,
-    gradeRRR: 710,
-    babyClass: 760,
+    gradeR: '870',
+    gradeRR: '710',
+    gradeRRR: '710',
+    babyClass: '760',
   });
   const [aftercareFees, setAftercareFees] = useState({
-    'applies_at_15:00mp': 50,
-    aftercare_Learners: 650,
-    weekend_Aftercare_NonCatered: 150,
-    weekend_Aftercare_Catered: 750,
+    'applies_at_15:00mp': '50',
+    'aftercare_Learners(per_month)': '650',
+    'weekend_Aftercare_NonCatered(1_day)': '150',
+    weekend_Aftercare_Catered: '750',
     sleepover: 350,
   });
   const [loading, setLoading] = useState(false);
@@ -63,7 +63,7 @@ function FeesPage() {
         <ul className="fee-list">
           {Object.keys(aftercareFees).map((category) => (
             <li key={category} className="fee-item">
-              {category}: R {feesData?.aftercareFees?.[category] || aftercareFees[category]}/month
+              {category}: R {feesData?.aftercareFees?.[category] || aftercareFees[category]}
             </li>
           ))}
         </ul>
